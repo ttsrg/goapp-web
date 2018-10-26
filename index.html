@@ -1,38 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="app.js"></script> <!-- Your app specific code -->
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript" src="app.js"></script> <!-- Your app specific code -->
 </head>
-
 <body class="container">
+ <div class="row">
+  <div class="col-md-6">
+   <h2>Sum</h2>
+   <form>
+     <input type="text" id="a" /><br />
+     <input type="text" id="b" /><br />
+     <button type="button" onclick="getSum(); return false;">Get sum!</button>
+     <button type="button" onclick="getDiff(); return false;">Get diff!</button>
 
-	<div class="row">
-		<div class="col-md-6">
-			<h2>Sum</h2>
-			<form>
-				<input type="text" id="a" /><br />
-				<input type="text" id="b" /><br />
-				<button type="button" onclick="getSum(); return false;">Get sum!</button>
-			</form>
-			<hr />
-
-		</div>
-	</div>
-
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Diff</h2>
-            <form>
-                <input type="text" id="a" /><br />
-                <input type="text" id="b" /><br />
-                <button type="button" onclick="getDiff(); return false;">Get diff!</button>
-            </form>
-            <hr />
-
-        </div>
-    </div>
+   </form>
+   <hr />
+  </div>
+ </div>
 </body>
 </html>

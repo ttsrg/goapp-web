@@ -4,7 +4,7 @@ function getSum() {
 
   console.log("Summing: " + a + " and " + b);
 
-  $.get("http://localhost:8080/sum/?a=" + a + "&b=" + b, function( data ) {
+  $.get("https://ttserg.devops.srwx.net/api/sum/?a=" + a + "&b=" + b, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
 	  .append(" Result: " + data.Result + "<br>")
@@ -13,12 +13,12 @@ function getSum() {
 }
 
 function getDiff() {
-  var a = $("#a").val()
-  var b = $("#b").val()
+  var c = $("#a").val()
+  var d = $("#b").val()
 
-  console.log("Difference between: " + a + " and " + b);
+  console.log("Difference between: " + c + " and " + d);
 
-  $.get("http://localhost:8080/diff/?a=" + a + "&b=" + b, function( data ) {
+  $.get("https://ttserg.devops.srwx.net/api/diff/?a=" + c + "&b=" + d, function( data ) {
     $("body")
       .append(" Status: " + data.Status)
       .append(" Result: " + data.Result + "<br>")
